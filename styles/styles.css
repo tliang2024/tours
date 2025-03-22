@@ -1,0 +1,125 @@
+/* home page styles */
+
+@font-face {
+  font-family: "ambleregular";
+  src: url("fonts/Amble-Regular-webfont.eot") format("embedded-opentype"),
+    url("fonts/Amble-Regular-webfont.svg") format("svg"),
+    url("fonts/Amble-Regular-webfont.ttf") format("ttf"),
+    url("fonts/Amble-Regular-webfont.woff") format("woff");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: #eae4e4;
+  font-family: "ambleregular";
+  font-size: 1rem;
+  margin: 1em;
+}
+
+/*========== typography ==========*/
+
+#menu-intro p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5em;
+}
+
+#site-nav h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+}
+
+#site-nav a {
+  text-decoration: none;
+}
+
+#site-nav p {
+  font-size: 1rem;
+}
+
+footer {
+  font-size: 1.2rem;
+}
+
+/*========== layout ==========*/
+header {
+  width: 100%;
+}
+
+/* navigation */
+#site-nav {
+  background-color: gray;
+  border-radius: 2.5vw; /* book */
+  margin: 1em auto;
+  padding: 0.75em 1.5em;
+}
+
+#site-nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#site-nav li {
+  width: 100%;
+  position: relative;
+  background-color: white;
+  list-style-type: none;
+  border-radius: 2.5vw;
+  margin: 1.2em auto;
+  padding: 0.5em 1.5em;
+  text-align: right;
+}
+
+#site-nav img {
+  border-radius: 2.5vw;
+  width: 25%;
+  position: absolute; /* place the image on the left side of the container */
+  top: -0.25em;
+  left: -0.25em;
+}
+
+@media (min-width: 675px) {
+  #site-nav ul {
+    flex-direction: row;
+  }
+
+  #site-nav li {
+    width: 16.6%;
+    text-align: center;
+    padding: 20% 1% 2% 1%;
+  }
+
+  #site-nav h1 {
+    font-size: 1.2rem;
+  }
+
+  #site-nav img {
+    width: 120%;
+    top: -0.5em;
+    left: -0.5em;
+  }
+}
+
+/* footer */
+footer {
+  text-align: center;
+}
+
+footer p {
+  margin-top: 1em;
+}

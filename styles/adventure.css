@@ -1,0 +1,179 @@
+/* Adventure Page Styles */
+
+@font-face {
+  font-family: "ambleregular";
+  src: url("fonts/Amble-Regular-webfont.eot") format("embedded-opentype"),
+    url("fonts/Amble-Regular-webfont.svg") format("svg"),
+    url("fonts/Amble-Regular-webfont.ttf") format("ttf"),
+    url("fonts/Amble-Regular-webfont.woff") format("woff");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: #eae4e4;
+  font-family: "ambleregular";
+  font-size: 1rem;
+  margin: 1em;
+}
+
+/*========== typography ==========*/
+nav a {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.7vw;
+  color: white;
+}
+
+#ot {
+  background-color: rgb(201, 4, 4);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  padding: 0.5em;
+  color: white;
+  text-shadow: 1px 1px gray;
+}
+
+#intro h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+#intro p {
+  font-size: 1.3rem;
+  margin: 1em 0;
+}
+
+#button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-shadow: 1px 1px gray;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  background-color: rgb(213, 104, 26);
+}
+
+footer {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 675px) {
+  #ot {
+    font-size: 2vw;
+  }
+
+  #intro p {
+    font-size: 2vw;
+  }
+
+  #intro h3 {
+    font-size: 3vw;
+  }
+
+  #button {
+    font-size: 2.5vw;
+  }
+}
+
+/*========== layout ==========*/
+
+/* navbar */
+nav {
+  width: 100%;
+  margin-top: -2.5vw;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav li {
+  background-color: rgb(213, 104, 26);
+  border-radius: 2vw;
+  list-style-type: none;
+  text-align: center;
+  padding: 1.1%;
+  z-index: 1; /* above header image */
+}
+
+/* main content on adventure.html */
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0;
+}
+
+#main-image {
+  position: relative;
+}
+
+#main-image img {
+  width: 90%;
+  margin-left: 5%;
+}
+
+/* overlay text above the main image */
+#ot {
+  position: absolute;
+  top: 80%;
+  left: -2vw; /* to position against the right edge as body has a margin of 2vw */
+}
+
+/* find out more button */
+#button {
+  display: block;
+  margin: 2em auto;
+  width: 30vw;
+  padding: 0.8em;
+  border-radius: 2.5vw;
+}
+
+#button:hover {
+  background-color: rgb(235, 155, 35);
+}
+
+@media (min-width: 675px) {
+  main {
+    flex-direction: row;
+    align-items: start;
+  }
+
+  #main-image {
+    width: 55%;
+  }
+
+  #intro {
+    width: 40%;
+  }
+}
+
+/* footer */
+footer {
+  text-align: center;
+}
+
+footer p {
+  margin-top: 1em;
+}

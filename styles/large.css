@@ -1,0 +1,100 @@
+/* main styles for big screens */
+h1 {
+  font-weight: bold;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2vw;
+  margin: 1vw auto;
+}
+
+/* ========== home page ========== */
+/* horizontal navigation on big screen */
+#site-nav {
+  padding: 0.5%;
+}
+
+#site-nav ul {
+  display: flex;
+}
+
+#site-nav li {
+  width: 16%;
+  margin: 2%;
+  padding: 1%;
+}
+
+#site-nav h3 {
+  margin: 5%;
+  font-size: 2.2vw;
+}
+
+#site-nav p {
+  font-size: 1.5vw;
+}
+#site-nav img {
+  width: 115%;
+  position: relative;
+  top: -1vw;
+  left: -1vw;
+}
+
+#site-nav a {
+  text-align: center;
+}
+
+footer {
+  margin-top: 5%;
+  text-align: center;
+  font-size: 1.5vw;
+  clear: both;
+}
+
+/* ========== Adventure Page ========== */
+/* navigation on adventure page */
+nav a {
+  font-size: 1.8vw;
+}
+
+/* main image and overlay text on big screen */
+#main-image {
+  max-width: 50%;
+  float: left;
+  margin: 3% 0;
+}
+
+#main-image img {
+  width: 100%;
+}
+
+#ot {
+  width: 80%;
+  bottom: 10%;
+  left: -2vw;
+  font-size: 2vw;
+}
+
+#intro {
+  width: 44%;
+  float: left;
+  margin: 3%;
+  position: relative;
+}
+
+#intro h3 {
+  font-size: 3vw;
+  text-align: center;
+  margin: 3%;
+}
+
+#intro p {
+  font-size: 1.8vw;
+  margin: 2vw 0;
+}
+
+/* find out more button on big screen */
+#button {
+  position: absolute;
+  top: 100%;
+  left: 28%;
+  font-size: 1.5vw;
+}
